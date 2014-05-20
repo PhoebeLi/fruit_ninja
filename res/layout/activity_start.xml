@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/main_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill_vertical|fill_horizontal|fill" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="true"
+            android:cropToPadding="true"
+            android:maxHeight="@dimen/activity_horizontal_margin"
+            android:maxWidth="@dimen/activity_horizontal_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/background1" />
+
+        <Button
+            android:id="@+id/buttonStart"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonExit"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:background="#FF0000"
+            android:onClick="startGame"
+            android:text="@string/button_start" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#FF0000"
+            android:onClick="exitGame"
+            android:text="@string/button_exit" />
+
+    </RelativeLayout>
+
+</LinearLayout>

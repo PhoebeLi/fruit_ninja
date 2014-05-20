@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_1"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:textAlignment="center" >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mainbackground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ninjas" />
+
+        <Button
+            android:id="@+id/buttonRestart"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/buttonPause"
+            android:text="@string/button_restart" />
+
+        <Button
+            android:id="@+id/buttonPause"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/buttonRestart"
+            android:text="@string/button_pause" />
+
+        <Button
+            android:id="@+id/buttonBack"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/buttonRestart"
+            android:onClick="backToStart"
+            android:text="@string/button_back" />
+
+    </RelativeLayout>
+
+</LinearLayout>
